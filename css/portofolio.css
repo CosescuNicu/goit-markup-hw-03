@@ -156,7 +156,7 @@ ul {
   letter-spacing: 0.48px;
   cursor: pointer;
 }
-.button:hover {
+.button:hover .button:focus {
   background-color: #2196f3;
   color: #ffffff;
 }
@@ -166,13 +166,16 @@ ul {
   align-content: space-around;
   align-items: baseline;
   justify-content: space-evenly;
+  gap: 30px;
+  border: 1px;
 }
 .proiect {
   width: 370px;
-  height: 294px;
+  height: 404px;
   flex-shrink: 0;
 }
 .image-title {
+  width: 322px;
   color: #212121;
   font-size: 18px;
   font-family: Roboto;
@@ -182,6 +185,7 @@ ul {
   letter-spacing: 1.08px;
 }
 .image-description {
+  width: 322px;
   color: #757575;
   font-size: 16px;
   font-family: Roboto;
