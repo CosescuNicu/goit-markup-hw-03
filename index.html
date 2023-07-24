@@ -11,7 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -35,20 +38,24 @@
             <li class="nav-third-item">
               <a href="Contacts" class="visited">Contacts</a>
             </li>
-          </ul>
+          </ul>       
       </nav>
-        <p class="external-link-header-mail"><a href="mailto:info@devstudio.com">info@devstudio.com</a></p>
+       <p class="external-link-header-mail"><a href="mailto:info@devstudio.com">info@devstudio.com</a></p>
       <p class="external-link-header-phone"><a href="tel:+4733378901">+1 212-772-4150</a></p>
     </header>
+
     <!--sfarsit header-->    
+    
     <main>
       <section class="hero-description">
         <h1 class="first-title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
         <button type="button" class="first-button">Request our service</button>
       </section>
+
       <!--descriere calitati echipa -->
-      <section class="our-goals" >
-        <ul>
+
+      <section >
+        <ul class="goals-items">
           <li class="goals-first-item">
             <h3>ATTENTION TO DETAILS</h3>
             <span class="goals-first-description">We go into all the details and processes of your business to
@@ -77,7 +84,9 @@
           </li>
         </ul>
       </section>
+
       <!--activitati-->
+
       <section class="what-we-do">
         <h2 class="second-title">What we do</h2>
         <ul class="photo-what-we-do">
@@ -85,16 +94,13 @@
             <img
               src="./images/imgno1.jpg"
               alt="imgno1"
-              width="370"
-              height="294"
-            />
+              width="370"/>
           </li>
           <li>
             <img
               src="./images/imgno2.jpg"
               alt="imgno2"
               width="370"
-              height="294"
             />
           </li>
           <li>
@@ -102,15 +108,17 @@
               src="./images/imgno3.jpg"
               alt="imgno3"
               width="370"
-              height="294"
             />
           </li>
         </ul>
       </section>
+
       <!--echipa-->
+
       <section class="team">
-        <h2 class="second-title">Our Team</h2>
+        <h2 class="team-title">Our Team</h2>
         <div class="team-members">
+          <div class="member-card">
           <img
             src="./images/christopherwalker.jpg"
             alt="Christopher Walker"
@@ -119,7 +127,7 @@
           <p class="member-name">Christopher Walker</p>
           <p class="member-dep">Product Designer</p>
         </div>
-        <div class="team-members">
+        <div class="member-card">
           <img
             src="./images/kylieevans.jpg"
             alt="Kylie Evans"
@@ -128,7 +136,7 @@
           <p class="member-name">Kylie Evans</p>
           <p class="member-dep">Frontend Developer</p>
         </div>
-        <div class="team-members">
+        <div class="member-card">
           <img
             src="./images/ryanharris.jpg"
             alt="Ryan Harris"
@@ -137,7 +145,7 @@
           <p class="member-name">Ryan Harris</p>
           <p class="member-dep">Marketing</p>
         </div>
-        <div class="team-members">
+        <div class="member-card">
           <img
             src="./images/tylermoore.jpg"
             alt="Tyler Moore"
@@ -146,6 +154,7 @@
           <p class="member-name">Tyler Moore</p>
           <p class="member-dep">UI Designer</p>
         </div>
+      </div>
       </section>
     </main>
     <!--footer-->
