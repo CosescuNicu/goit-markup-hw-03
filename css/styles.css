@@ -1,6 +1,10 @@
 /*@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");*/
 
 body {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 1600px;
   height: 2348px;
   background: #ffffff;
@@ -46,8 +50,7 @@ ul {
   display: flex;
   position: relative;
   width: 1600px;
-  height: 80px;
-  left: 0px;
+  height: 80px;absolute
   top: 0px;
   background-color: rgba(255, 255, 255, 1);
 }
@@ -146,7 +149,6 @@ ul {
   position: absolute;
   width: 1600px;
   height: 592px;
-  left: 0;
   top: 80px;
 }
 
@@ -344,13 +346,14 @@ ul {
 }
 
 .team {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 1600px;
   height: 648px;
-  margin-top: 1449px;
+  top: 1449px;
   background: #f5f4fa;
 }
 .team-title {
@@ -417,7 +420,7 @@ ul {
 /* footer*/
 
 .global-footer {
-  position: relative;
+  position: absolute;
   width: 1600px;
   height: 251px;
   bottom: 0;
