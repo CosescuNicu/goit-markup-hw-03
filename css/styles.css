@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
 
 body {
+  position: relative;
   width: 1600px;
   height: 2348px;
   background: #ffffff;
@@ -199,7 +200,7 @@ ul {
 .goals-display{
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 .goals-first-item {
@@ -326,8 +327,7 @@ ul {
 .what-we-do {
   position: absolute;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   width: 1170px;
   height: 386px;
   left: 215px;
