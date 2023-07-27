@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
 
 body {
-  position: absolute;
+  position: relative;
   width: 1600px;
-  height: 1869px;
+  height: 2348px;
   background: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -15,13 +17,10 @@ h5,
 h6 {
   font-family: "Roboto", "Raleway", sans-serif;
 }
-.global-header {
-  position: absolute;
-  width: 1600px;
-  height: 80px;
-  left: 0px;
-  top: 0px;
-  background-color: rgba(255, 255, 255, 1);
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 .active {
   font-family: "Roboto";
@@ -43,8 +42,19 @@ h6 {
   color: #212121;
   cursor: pointer;
 }
+
+/*--global header--*/
+
+.global-header {
+  position: absolute;
+  width: 1600px;
+  height: 80px;
+  top: 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+
 .logo-global {
-  position: relative;
+  position: absolute;
   width: 145px;
   height: 31px;
   left: 215px;
@@ -104,6 +114,10 @@ h6 {
   letter-spacing: 0.02em;
   color: #757575;
 }
+.external-link-header-mail:hover {
+  color: #2196f3;
+  cursor: pointer;
+}
 .external-link-header-phone {
   position: absolute;
   width: 113px;
@@ -118,31 +132,36 @@ h6 {
   letter-spacing: 0.02em;
   color: #757575;
 }
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.external-link-header-phone:hover {
+  color: #2196f3;
+  cursor: pointer;
 }
+
+
 .portofolio-content {
-  position: relative;
-  display: block;
+  position: absolute;
+  display: flex;
+  justify-items: center;
   width: 1170px;
   height: 1360px;
-  margin-top: 94px;
-  margin-bottom: 94px;
-  margin-left: 215px;
-  padding-top: 10px;
+  top: 174px;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 94px 215px;
 }
+
 .portofolio-butons {
   display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
   width: 516px;
   height: 38px;
-  margin-left: 327px;
-  align-items: flex-start;
-  align-content: baseline;
+  gap: 8px;
   border-radius: 4px;
-  gap: 4px;
+  padding-bottom: 50px;
 }
 
 .button {
@@ -155,8 +174,10 @@ ul {
   line-height: 26px;
   letter-spacing: 0.48px;
   cursor: pointer;
+  border-radius: 4px;
 }
-.button:hover .button:focus {
+.button:hover,
+.button:focus {
   background-color: #2196f3;
   color: #ffffff;
 }
@@ -173,7 +194,9 @@ ul {
   width: 370px;
   height: 404px;
   flex-shrink: 0;
+  border: 1px;
 }
+
 .image-title {
   width: 322px;
   color: #212121;
@@ -184,6 +207,7 @@ ul {
   line-height: 36px;
   letter-spacing: 1.08px;
 }
+
 .image-description {
   width: 322px;
   color: #757575;
@@ -194,14 +218,15 @@ ul {
   line-height: 30px;
   letter-spacing: 0.48px;
 }
+
 .global-footer {
   position: absolute;
   width: 1600px;
   height: 251px;
-  left: 0px;
-  bottom: 0px;
+  top: 1628px;
   background: #2f303a;
 }
+
 .logo-footer {
   margin-left: 215px;
   margin-top: 60px;
@@ -243,5 +268,4 @@ ul {
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
-  letter-spacing: 0.42px;
-}
+  letter-spacing: 0.
